@@ -1,0 +1,5 @@
+#dependencies
+/shop/node_modules
+
+#misc
+.DS_Store
