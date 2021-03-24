@@ -29,7 +29,7 @@ sql.connect(config).then(db => {
   } else {
     console.log("Connect to Database");
     const request = db.request();
-    request.query("SELECT * FROM Users WHERE First_Name='Anson'", (err, record) => {
+    request.query("SELECT * FROM Users WHERE First_Name='123'", (err, record) => {
       if (err) {
         console.log(err);
       } else if (!record.recordset.length) {
