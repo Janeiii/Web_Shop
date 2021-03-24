@@ -33,7 +33,7 @@ sql.connect(config).then(db => {
       if (err) {
         console.log(err);
       } else if (!record.recordset.length) {
-        console.log("No Result");
+        console.log("No Result!");
       } else {
         console.log(record);
       }
