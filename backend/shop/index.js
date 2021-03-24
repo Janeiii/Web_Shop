@@ -24,7 +24,7 @@ sql.on('error', err => {
 
 sql.connect(config).then(db => {
   if (!db) {
-    console.log("Cannot Connect to Database");
+    console.log("Cannot Connect to Database!");
     process.exit();
   } else {
     console.log("Connect to Database");
