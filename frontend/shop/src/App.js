@@ -8,7 +8,6 @@ function App() {
   return (
     <div>
       <Header/>
-        <Route exact path="/" component={Home} />
         <Route exact path="/register" component={Register} />
     </div>
   );
