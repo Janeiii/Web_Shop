@@ -1,16 +1,18 @@
-import logo from './logo.svg';
 import Header from "./components/header/header";
-import {Route} from "react-router-dom";
+import {Route, withRouter} from "react-router-dom";
 
-import Register from "./pages/register";
+import Welcome from "./pages/welcome/welcome";
+import Register from "./pages/register/register";
 
-function App() {
+
+function App(props) {
   return (
     <div>
-      <Header/>
+      {props.location.pathname === "/"? null : <Header/>}
+        <Route exact path="/" component={Welcome} />
         <Route exact path="/register" component={Register} />
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
