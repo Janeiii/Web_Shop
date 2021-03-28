@@ -16,7 +16,7 @@ const useStyles = makeStyles({
         outline: "none",
         border: "none",
         marginBottom: "5%",
-        width: "80%"
+        width: "85%"
     },
 
     loginForm: {
@@ -95,7 +95,7 @@ const Login = () => {
                         to={"welcome"}
                         onClick={Login}
                     >
-                        Lllllogin
+                        Login
                     </Button>
                 </form>
             </div>

@@ -8,6 +8,7 @@ import image from "./market_background.jpg";
 const useStyles = makeStyles({
     root: {
         backgroundImage: `url(${image})`,
+        backgroundSize: "cover",
         textAlign: "center",
         height: "900px",
         width: "100%",
@@ -34,7 +35,7 @@ const Welcome = () => {
     const classes = useStyles();
 
     return (
-        <div style={{height: "100%"}}>
+        <div>
             <div className={classes.root}>
                 <h2>Welcome to the WebShop</h2>
                 <Button className={classes.clickButton} component={Link} to={"register"}>Click to Enter Site</Button>
