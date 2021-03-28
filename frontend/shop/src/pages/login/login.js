@@ -5,7 +5,7 @@ import {makeStyles } from "@material-ui/core/styles";
 import {Link} from "react-router-dom";
 
 const useStyles = makeStyles({
-    regButton: {
+    logButton: {
         background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
         border: 0,
         borderRadius: 3,
@@ -38,17 +38,14 @@ const useStyles = makeStyles({
 
 const Login = () => {
     const classes = useStyles();
-    const [email, setEmail] = React.useState("");
-    const [username, setUsername] = React.useState("");
-    const [password, setPassword] = React.useState("");
-    const [confirm_password, setConfirmPassword] = React.useState("");
+    const [username, getUsername] = React.useState("");
+    const [password, getPassword] = React.useState("");
 
     const validate = () => {
     };
 
     const Login = () => {
         const body = {
-            email: email,
             username: username,
             password: password,
         };
@@ -79,7 +76,7 @@ const Login = () => {
                         value={username}
                         variant={"outlined"}
                         required={true}
-                        onChange={(e) => setUsername(e.target.value)}
+                        onChange={(e) => getUsername(e.target.value)}
                     >
                     </TextField>
                     <TextField
@@ -89,16 +86,16 @@ const Login = () => {
                         type={"password"}
                         variant={"outlined"}
                         required={true}
-                        onChange={(e) => setPassword(e.target.value)}
+                        onChange={(e) => getPassword(e.target.value)}
                     >
                     </TextField>
                     <Button
-                        className={classes.regButton}
+                        className={classes.logButton}
                         component={Link}
                         to={"welcome"}
-                        //onClick={register}
+                        onClick={Login}
                     >
-                        Register
+                        Lllllogin
                     </Button>
                 </form>
             </div>

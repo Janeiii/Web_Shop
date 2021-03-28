@@ -28,6 +28,7 @@ const useStyles = makeStyles({
         padding: "50px",
         backgroundColor: "white",
         boxShadow: "0 0 20px 2px rgba(0, 0, 0, 0.4)",
+
     },
 
     form: {

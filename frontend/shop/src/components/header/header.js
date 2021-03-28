@@ -92,7 +92,7 @@ const Header = () => {
                    <Button
                        color="inherit"
                        component={Link}
-                       to={"register"}
+                       to={"login"}
                    >Login</Button>
                </Toolbar>
            </AppBar>
