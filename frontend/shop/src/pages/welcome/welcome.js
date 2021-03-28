@@ -13,7 +13,7 @@ const useStyles = makeStyles({
         height: "100%",
         width: "100%",
         color: 'white',
-        position: "absolute"
+        position: "absolute",
     },
 
     clickButton: {
