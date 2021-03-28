@@ -10,10 +10,10 @@ const useStyles = makeStyles({
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
         textAlign: "center",
-        height: "900px",
+        height: "100%",
         width: "100%",
         color: 'white',
-        top: "50%",
+        position: "absolute"
     },
 
     clickButton: {
@@ -25,21 +25,19 @@ const useStyles = makeStyles({
         height: 48,
         padding: '0 30px',
         textAlign: "center",
-        top: "50%",
     },
 
-
+    header: {
+    },
 });
 
 const Welcome = () => {
     const classes = useStyles();
 
     return (
-        <div>
-            <div className={classes.root}>
-                <h2>Welcome to the WebShop</h2>
-                <Button className={classes.clickButton} component={Link} to={"register"}>Click to Enter Site</Button>
-            </div>
+        <div className={classes.root}>
+            <h2 className={classes.header}>Welcome to the WebShop</h2>
+            <Button className={classes.clickButton} component={Link} to={"register"}>Click to Enter Site</Button>
         </div>
 
     );
